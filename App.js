@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import {useFonts} from 'expo-font';
 import Home from './screens/Home';
 import Details from './screens/Details';
+=======
+import { StyleSheet, StatusBar,Text, View } from 'react-native';
+>>>>>>> c0aee10eb12c2f96a1bdda229311793c2002be01
 
 
 const Stack = createStackNavigator();
@@ -27,6 +31,7 @@ const App = () => {
 
   if (!loaded) return null;
   return (
+<<<<<<< HEAD
    <NavigationContainer theme={theme}>
      <Stack.Navigator   
           screenOptions={{ headerShown: tr}}
@@ -35,6 +40,12 @@ const App = () => {
        <Stack.Screen  name="Details" component={Details}/>
      </Stack.Navigator>
    </NavigationContainer>
+=======
+    <View style={styles.container}>
+      <Text>Hello World!!</Text>
+      <StatusBar style="auto" />
+    </View>
+>>>>>>> c0aee10eb12c2f96a1bdda229311793c2002be01
   );
 }
 
