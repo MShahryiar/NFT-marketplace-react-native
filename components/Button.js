@@ -27,7 +27,7 @@ export const CircleButton = ({imgUrl, handlePess, ...props}) => {
   )
 }
 
-export const RectButton = ({minWidth, fontSize, handlePess, ...props}) => {
+export const RectButton = ({minWidth, fontSize, handlePress, ...props}) => {
     return (
       <TouchableOpacity
       style={{
@@ -37,7 +37,7 @@ export const RectButton = ({minWidth, fontSize, handlePess, ...props}) => {
         padding:SIZES.small,
         ...props
       }}
-      onPress={handlePess}
+      onPress={handlePress}
     >
      <Text style={{
        fontFamily:FONTS.semiBold,
